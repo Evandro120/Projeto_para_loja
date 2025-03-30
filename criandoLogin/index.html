@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Novosprojetos/projeto4/imagens/yvonlenestore-removebg-preview.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Criar Login</title>
+</head>
+<body>
+
+  <section class="cabecalho">
+    <nav>
+        <div class="head">
+           <a href="/Novosprojetos/projeto4/index.html"><img class="esloga" src="/Novosprojetos/projeto4/imagens/yvonlenestore-removebg-preview.png"></a>
+        </div>
+    </nav>
+  </section>
+
+    <h1>CRIE SUA CONTA</h1>
+    <p>Preencha os dados a baixo, inicie suas compras</p>
+    <form method="post" action='#'>
+      <fieldset>
+        <label for="nome">Nome completo: <input id="nome" name="nome" type="text" required /></label>
+        <label for="cpf">CPF: <input id="cpf" name="cpf" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" required/></label>
+        <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+        <label for="senha">Senha: <input id="senha" name="senha" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+      
+        <input id="Termos" type="checkbox" required name="Termos" class="inline" /> <span>Aceito os <a href="#">termos</a></span>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="pesquisa">Como você ficou sabendo de nós?
+          <select id="pesquisa" name="pesquisa">
+            <option value="">Selecione uma opção</option>
+            <option value="insta">Instragram</option>
+            <option value="face">Facebook</option>
+            <option value="amigos">Amigos</option>
+            <option value="outros">Outros</option>
+          </select>
+        </label>
+        
+      </fieldset>
+      <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>

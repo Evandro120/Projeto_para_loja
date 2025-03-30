@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.Door{
+    width: 95%;
+    margin: 0 auto 40px auto;
+    padding:15px 0;
+    box-shadow: 0 8px 16px 0 #8a5cfd,0 6px 40px 0 #65c3e8;
+}
+
+.cabecalho{
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(to right, #8a5cfd, #65c3e8);
+    position:fixed;
+}
+
+.head{
+    display: flex;
+    align-items:center ;
+}
+
+.selct{
+    text-decoration: none;
+    color: white;
+    margin-right:12px ;
+    letter-spacing: 2px;
+    
+}
+
+.esloga{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.pesq{
+    position: absolute;
+    right: 10px;
+}
+.pesq:hover, .botao:hover{
+    opacity: 0.8;
+}
+.mozaico{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:120px 0 ;
+}
+
+.produto_principal{
+    width: 380px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+img.active, img:first-child {
+    opacity: 1;
+}
+
+
+div.estoque{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 18px 0;
+}
+
+.produto{
+    background:#8a5cfd; 
+    margin: 0 10px; 
+    border-radius: 10px;
+    width:249px;
+}
+
+.descricao{
+    color: black;
+    height: 210px;
+    padding: 20px 0 0 0;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 3%;
+}
+    
+.descricao > p{padding: 0 0 20px 0;}
+div.produto > img{
+    width:249px;
+    height:200px;
+    transition: filter 0.3s;
+}
+
+.disco{
+    display: flex;
+    justify-content: center;
+}
+.botao{
+    border: none;
+    width: 140px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    height: 25px;
+    background-color: white;
+    color: #8a5cfd;
+    font-weight: bold;
+    cursor: pointer;
+}
+.BT{
+    background-color: white;
+    padding: 10px;
+    color: #8a5cfd;
+    border-radius: 40px;
+}
+.BT:hover{
+ background-color: #8a5cfd;
+ color: white;
+}
+.pesquisa{
+    margin-left: 3%;
+    padding: 10px 15% 10px 10px;
+    border: none;
+    outline:none;
+}
+
+section.contatos{
+    text-align: center;    
+    padding: 60px 0;
+    width: 98%;
+    margin: 15px auto 0 auto;
+    box-shadow:0 8px 16px 0 #8a5cfd,0 6px 40px 0 #65c3e8 ;
+}
+
+section.contatos > p{padding: 25px 0; color: gray;}
+
+.cont1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont2{
+    text-align: left;
+    padding: 0 100px;
+}
+
+.cont2 > p{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 0 6px 0;
+}
+
+input{
+    margin:0 8px 12px 0;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid gray ;
+    outline:none;
+}
+input.C3{
+    width: 65.3%;
+}
+div.cont3 > div.CT1{
+    width: 100%;
+    height: 51px;
+    display: flex;
+    justify-content: flex-end;
+}
+button.CT{
+    margin-right:8px ;
+    padding: 15px;
+    background: linear-gradient(to bottom, #8a5cfd, #65c3e8);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.CT:hover{
+   opacity: 0.9;
+}
+
+.busca{
+ color: gray;
+}
+
+.FT{
+    width: 100%;
+    height: auto;
+}
+
+p.sinalizacao{
+ padding-left:25% ;
+ font-weight: 600;
+}
+i.busca{
+    padding: 0 3px;
+    font-size: 20px;
+    color: rgb(3, 206, 3);
+}
+
+footer{
+    height: 60px;
+    background: linear-gradient(to right, #8a5cfd, #65c3e8);
+    font-size: 16px;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+footer > div > i{
+margin: 0 1.5px;
+}
